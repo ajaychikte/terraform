@@ -31,7 +31,7 @@ resource "aws_instance" "web" {
 
   vpc_security_group_ids = [aws_security_group.web_sg.id]
 
-  key_name = "a2"
+  key_name = "data"
 
   user_data = <<-EOF
     #!/bin/bash
